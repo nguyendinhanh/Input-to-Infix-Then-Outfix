@@ -1,0 +1,90 @@
+1. Enter infix expression: 3 + 4
+Standardized infix:   3.0  +  4.0  
+Postfix expression:  3.0  4.0  +  
+Answer: 7.0
+
+2. Enter infix expression: 3 - 4
+Standardized infix:   3.0  -  4.0  
+Postfix expression:  3.0  4.0  -  
+Answer: -1.0
+
+3. Enter infix expression: 3/4
+Standardized infix:   3.0  /  4.0  
+Postfix expression:  3.0  4.0  /  
+Answer: 0.75
+
+4. Enter infix expression: 3  *4
+Standardized infix:   3.0  *  4.0  
+Postfix expression:  3.0  4.0  *  
+Answer: 12.0
+
+Enter infix expression: 34 * 43 + 5
+Standardized infix:   34.0  *  43.0  +  5.0  
+Postfix expression:  34.0  43.0  *  5.0  +  
+Answer: 1467.0
+
+6. Enter infix expression: 32   / 16 + 3
+Standardized infix:   32.0  /  16.0  +  3.0  
+Postfix expression:  32.0  16.0  /  3.0  +  
+Answer: 5.0
+
+7. Enter infix expression: (18-2)   / 8 + 3 * 2
+Standardized infix:   (  18.0  -  2.0  )  /  8.0  +  3.0  *  2.0  
+Postfix expression:  18.0  2.0  -  8.0  /  3.0  +  2.0  *  
+Answer: 10.0
+
+8. Enter infix expression: -0.5 - 0.5
+Standardized infix:   -0.5  -  0.5  
+Postfix expression:  -0.5  0.5  -  
+Answer: -1.0
+
+9. Enter infix expression: +0.5 - +0.5
+Standardized infix:   0.5  -  0.5  
+Postfix expression:  0.5  0.5  -  
+Answer: 0.0
+
+10. Enter infix expression: 650000000000 - 65000000000
+Standardized infix:   6.5E11  -  6.5E10  
+Postfix expression:  6.5E11  6.5E10  -  
+Answer: 5.85E11
+
+11. Enter infix expression: 11
+Standardized infix:   11.0  
+Postfix expression:  11.0  
+Answer: 11.0
+
+12. Enter infix expression: 3&5
+Invalid operator: &
+Exception in thread "main" InvalidOperatorException
+	at InfixToPostfix.parser(InfixToPostfix.java:55)
+	at InfixToPostfix.main(InfixToPostfix.java:185)
+
+13. Enter infix expression: 374^+7$
+Invalid operator: ^
+Exception in thread "main" InvalidOperatorException
+	at InfixToPostfix.parser(InfixToPostfix.java:55)
+	at InfixToPostfix.main(InfixToPostfix.java:185)
+
+14. Enter infix expression: 34.5235.53 + 53
+Invalid operand: 34.5235.53
+Exception in thread "main" InvalidOperandException
+	at InfixToPostfix.parser(InfixToPostfix.java:44)
+	at InfixToPostfix.main(InfixToPostfix.java:185)
+
+15. Enter infix expression: 4.352.43 +53.43.4
+Invalid operand: 4.352.43
+Exception in thread "main" InvalidOperandException
+	at InfixToPostfix.parser(InfixToPostfix.java:44)
+	at InfixToPostfix.main(InfixToPostfix.java:185)
+
+16. Enter infix expression: (34+43
+Standardized infix:   (  34.0  +  43.0  
+Unbalanced left parenthesis '('Exception in thread "main" UnbalancedParenthesisException
+	at InfixToPostfix.InfixToPostfix(InfixToPostfix.java:153)
+	at InfixToPostfix.main(InfixToPostfix.java:188)
+
+17. Enter infix expression: 34+43)
+Standardized infix:   34.0  +  43.0  )  
+Exception in thread "main" Unbalanced right parenthesis ')'UnbalancedParenthesisException
+	at InfixToPostfix.InfixToPostfix(InfixToPostfix.java:152)
+	at InfixToPostfix.main(InfixToPostfix.java:189)
